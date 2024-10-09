@@ -2,5 +2,5 @@
 <p><%= @list.title %></p>
 
 <h2>本文</h2>
-<p><%= %></p>
 <p><%= @list.body %></p>
+<%= link_to "編集", edit_list_path(@list.id) %>
