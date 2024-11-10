@@ -18,7 +18,7 @@
   padding: 0;
 }
 
-header, h1, nav, .form-label, .list-comment {
+header, h1, h2, nav, p ,span, .list-comment {
   font-family: 'Kaushan', cursive, sans-serif;
 }
 
@@ -75,7 +75,6 @@ main {
   margin: 10px;
 }
 
-
 .form-label {
   margin-right: 10px;
 }
@@ -113,4 +112,18 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.list-detail-box {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.list-detail-group {
+  width: 350px;
+}
+
+.list-detail-group > div{
+  margin: 10px;
 }
