@@ -9,32 +9,32 @@
   </ul>
 <% end %>
 
-<%= form_with model: @list,url: '/lists',method: :post do |f| %>
+<%= form_with model: @list,url: lists_path,method: :post do |f| %>
 
-<div class="form-area">
-  <div class="form-group">
-    <div>
-      <span class="form-label">Title</span>
+  <div class="form-area">
+    <div class="form-group">
       <div>
-        <%= f.text_field :title %>
+        <span class="form-label">Title</span>
+        <div>
+          <%= f.text_field :title %>
+        </div>
       </div>
-    </div>
-    <div>
-      <span class="form-label">Body</span>
       <div>
-        <%= f. text_area :body %>
+        <span class="form-label">Body</span>
+        <div>
+          <%= f.text_area :body %>
+        </div>
       </div>
-    </div>
-    <div>
-      <span class="form-label">Image</span>
       <div>
-        <%= f.file_field :image, accept: "image/*" %>
+        <span class="form-label">Image</span>
+        <div>
+          <%= f.file_field :image, accept: "image/*" %>
+        </div>
       </div>
-    </div>
-    <div>
-      <%= f.submit '投稿' %>
+      <div>
+        <%= f.submit '投稿' %>
+      </div>
     </div>
   </div>
-</div>
 
 <% end %>
